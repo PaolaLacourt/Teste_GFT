@@ -1,3 +1,5 @@
+package com.example.demo.ajuda;
+
 public class Carga {
 
     private  Double valor;
@@ -17,5 +19,13 @@ public class Carga {
 
     public void setPeso(Double peso) {
         this.peso = peso;
+    }
+
+    public Carga(Double valor, Double peso) {
+        this.valor = valor;
+        this.peso = peso;
+    }
+
+    public Carga() {
     }
 }
