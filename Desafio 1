@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class teste {
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        
+        System.out.println("Informe o multiplicando: ");
+        int multiplo = in.nextInt();
+
+        System.out.println("Informe o início do intevalo: ");
+        int intervaloInicio = in.nextInt();
+
+        System.out.println("Informe o final do intervalo: ");
+        int intervaloFinal = in.nextInt();
+
+        if((intervaloFinal < intervaloInicio) || (intervaloFinal - intervaloInicio > 10 || (multiplo < 0 || multiplo > 3000) || (intervaloInicio < 0) || (intervaloFinal < 0))){
+            System.out.println("Erro. Entrada inválida!");
+        }else{
+            System.out.println("Multiplicando: " + multiplo);
+            System.out.println("Início do intervalo: " + intervaloInicio);
+            System.out.println("Fim do intervalo: " + intervaloFinal);
+
+            for( int i = intervaloInicio; i<= intervaloFinal; i++){
+                System.out.println(multiplo +" x " + i + " = " + (multiplo * i));
+            }
+        }
+
+    }
+}
